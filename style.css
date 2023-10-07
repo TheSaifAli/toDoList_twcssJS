@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.enterError{
+    @apply top-0 animate-[errorAnime_1s_ease]
+}
+.exitError{
+    @apply -top-[10%] animate-[exitAnime_1s_ease]
+}
+
+.listStyle{
+    @apply w-full flex justify-between items-center gap-3 bg-[#fd8f3a]  rounded-md shadow-xl my-2 px-2 py-1 transition-transform
+}
+.listInputStyle{
+    @apply bg-transparent w-full active:outline-none focus:outline-none rounded-xl  px-2 text-black font-semibold disabled:bg-transparent
+}
