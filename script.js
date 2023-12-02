@@ -24,7 +24,7 @@ formEl.addEventListener("submit", (e) => {
     }, 2000);
   } else {
     toDoList();
-    updateLocalStorage();
+    //updateLocalStorage();
   }
 });
 
@@ -67,15 +67,15 @@ function toDoList(task) {
         inputEl.value = e.target.value;
         inputEl.disabled = true;
         iEdit.style.color = "black";
-        updateLocalStorage();
+        //updateLocalStorage();
       }
     });
   });
   iDel.addEventListener("click", (e) => {
     liEl.remove();
-    updateLocalStorage();
+    //updateLocalStorage();
   });
-  updateLocalStorage();
+  //updateLocalStorage();
 }
 
 function updateLocalStorage() {
