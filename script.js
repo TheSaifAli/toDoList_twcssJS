@@ -5,10 +5,11 @@ const errorMsg = document.querySelector("#errorMsg");
 
 const retrieveList = JSON.parse(localStorage.getItem("list"));
 
+// local storage not working in github
 
-retrieveList.map((list) => {
+/* retrieveList.map((list) => {
     toDoList(list);
-});
+}); */
 
 
 formEl.addEventListener("submit", (e) => {
